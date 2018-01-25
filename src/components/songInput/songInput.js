@@ -4,37 +4,44 @@ import './songInput.scss';
 const SongInput = (props) => {
     return (
         <div>
-            <h2>Song Input</h2>
             <form>
-                <div className="song-input-field">
-                    <label>Artist: </label>
-                    <input
-                        name="artist"
-                        type="text"
-                        placeholder="Enter Artist"
-                        value={props.artist}
-                        onChange={props.handleChange}
-                    />
-                </div>    
-                <div className="song-input-field">
-                    <label>Song: </label>
-                    <input
-                        name="song"
-                        type="text"
-                        placeholder="Enter Song"
-                        value={props.song}
-                        onChange={props.handleChange}
-                    />
+                <div class="row">
+                    <h2>Song Input</h2>
                 </div>
-                <div className="song-input-field">
-                    <label>Link: </label>
-                    <input
-                        name="link"
-                        type="text"
-                        placeholder="Enter Link"
-                        value={props.link}
-                        onChange={props.handleChange}
-                    />
+                <div class="row">
+                    <div class="one-third column">
+                        <label className="alignLeft">Artist: </label>
+                        <input
+                            className="u-full-width"
+                            name="artist"
+                            type="text"
+                            placeholder="Enter Artist"
+                            value={props.artist}
+                            onChange={props.handleChange}
+                        />
+                    </div>
+                    <div class="one-third column">
+                        <label className="alignLeft">Song: </label>
+                        <input
+                            className="u-full-width"
+                            name="song"
+                            type="text"
+                            placeholder="Enter Song"
+                            value={props.song}
+                            onChange={props.handleChange}
+                        />
+                    </div>
+                    <div class="one-third column">
+                        <label className="alignLeft">Link: </label>
+                        <input
+                            className="u-full-width"
+                            name="link"
+                            type="text"
+                            placeholder="Enter Link"
+                            value={props.link}
+                            onChange={props.handleChange}
+                        />
+                    </div>
                 </div>
                 <button onClick={props.handleSubmit}>Add Song</button>
             </form>

@@ -71,21 +71,23 @@ class Headphones extends Component {
           <Logo />
           <h1 className="headphones-title">Headphones</h1>
         </header>
-        <section>
-          <SongInput
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-            artist={this.state.artist}
-            song={this.state.song}
-            link={this.state.link}
-          />
-        </section>
-        <section>
-          <Library
-            removeSong={this.removeSong}
-            library={this.state.library}
-          />
-        </section>
+        <div className="container">
+          <section>
+            <SongInput
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              artist={this.state.artist}
+              song={this.state.song}
+              link={this.state.link}
+            />
+          </section>
+          <section>
+            <Library
+              removeSong={this.removeSong}
+              library={this.state.library}
+            />
+          </section>
+        </div>
       </div>
     );
   }
