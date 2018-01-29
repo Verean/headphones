@@ -5,11 +5,11 @@ const SongInput = (props) => {
     return (
         <div>
             <form>
-                <div class="row">
+                <div className="row">
                     <h2>Song Input</h2>
                 </div>
-                <div class="row">
-                    <div class="one-third column">
+                <div className="row">
+                    <div className="one-third column">
                         <label className="alignLeft">Artist: </label>
                         <input
                             className="u-full-width"
@@ -20,7 +20,7 @@ const SongInput = (props) => {
                             onChange={props.handleChange}
                         />
                     </div>
-                    <div class="one-third column">
+                    <div className="one-third column">
                         <label className="alignLeft">Song: </label>
                         <input
                             className="u-full-width"
@@ -31,7 +31,7 @@ const SongInput = (props) => {
                             onChange={props.handleChange}
                         />
                     </div>
-                    <div class="one-third column">
+                    <div className="one-third column">
                         <label className="alignLeft">Link: </label>
                         <input
                             className="u-full-width"
